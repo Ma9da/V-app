@@ -1,9 +1,7 @@
 <template>
-  <header>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam aliquid
-    nesciunt quaerat voluptates quas nobis, voluptatibus, fuga minus maxime
-    omnis ut rem porro amet! Pariatur atque laborum magni nostrum qui?
-  </header>
+  <the-header>
+
+</the-header>
   <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" />
 
   <RouterView />
