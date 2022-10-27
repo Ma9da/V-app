@@ -1,9 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { defineAsyncComponent } from "vue";
-import Home from ""
 
-// Async component
-const lazyRoute = (path) => import(path);
 
 
 const router = createRouter({
@@ -12,7 +8,9 @@ const router = createRouter({
     {
       name: "Home",
       path: "/Home",
-      component: lazyRoute("@/views/HomeView"),
+      // Async component
+
+      component: import("@/views/HomeView"),
     },
   ],
 });
