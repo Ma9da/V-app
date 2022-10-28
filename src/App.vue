@@ -1,81 +1,20 @@
 <template>
-  <the-header>
-
-</the-header>
-  <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick" />
-
-  <RouterView />
+  <component :is="currentLayout">
+    <RouterView />
+  </component>
 </template>
 <script>
+import defaultLayout from "@/layout/Default.vue";
+
 export default {
-  data() {
-    return {
-      defaultProps: {
-        children: "children",
-        label: "label",
-      },
-      data: [
-        {
-          label: "Level one 1",
-          children: [
-            {
-              label: "Level two 1-1",
-              children: [
-                {
-                  label: "Level three 1-1-1",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          label: "Level one 2",
-          children: [
-            {
-              label: "Level two 2-1",
-              children: [
-                {
-                  label: "Level three 2-1-1",
-                },
-              ],
-            },
-            {
-              label: "Level two 2-2",
-              children: [
-                {
-                  label: "Level three 2-2-1",
-                },
-              ],
-            },
-          ],
-        },
-        {
-          label: "Level one 3",
-          children: [
-            {
-              label: "Level two 3-1",
-              children: [
-                {
-                  label: "Level three 3-1-1",
-                },
-              ],
-            },
-            {
-              label: "Level two 3-2",
-              children: [
-                {
-                  label: "Level three 3-2-1",
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    };
+  components: {
+    defaultLayout,
   },
-  methods: {
-    handleNodeClick(data) {
-      console.log(data);
+  computed: {
+    currentLayout() {
+      const layout = this.$route.meta.layout || "default";
+
+      return layout + "Layout";
     },
   },
 };

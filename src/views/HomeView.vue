@@ -1,9 +1,7 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <div>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi assumenda
+    quia eos velit cumque voluptatem rerum blanditiis quibusdam ducimus
+    explicabo, repellat earum, eius rem odio vero accusantium nemo adipisci ex.
+  </div>
 </template>
