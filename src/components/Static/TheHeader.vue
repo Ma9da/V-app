@@ -7,7 +7,7 @@
   >
     <span><img src="../../../public/logo.png" alt="logo" /></span>
     <div class="flex-grow" />
-    <el-menu-item index="1">Home</el-menu-item>
+    <el-menu-item index="1"> Home</el-menu-item>
     <el-menu-item index="2">Flights</el-menu-item>
     <el-menu-item index="3">Hotels</el-menu-item>
 
@@ -29,7 +29,7 @@
       <el-option key="SAR" label="SAR" value="SAR" />
     </el-select>
 
-    <el-dropdown trigger="click" style="margin: 0 10px">
+    <el-dropdown trigger="click" style="margin: 0 10px" cursor="pointer">
       <span
         ><img
           src="../../../public/logo.png"
@@ -69,13 +69,5 @@ export default {
 <style scoped>
 .flex-grow {
   flex-grow: 1;
-}
-.el-menu {
-  border: none !important;
-}
-.el-input__wrapper {
-  border-radius: 20px !important;
-  height: 30px;
-  display: flex;
 }
 </style>

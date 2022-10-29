@@ -1,3 +1,37 @@
-.el-tree-node__content {
-    height: 100px;
+// menu navbar
+.el-menu {
+  border: none;
+}
+.el-menu--horizontal .el-menu-item:not(.is-disabled):hover,
+.el-menu--horizontal .el-menu-item:not(.is-disabled):focus {
+  background-color: transparent;
+}
+.el-menu--horizontal > .el-menu-item {
+  border-bottom: none;
+}
+.el-menu--horizontal > .el-menu-item.is-active {
+  border-bottom: none;
+}
+
+// select input
+.el-input__wrapper {
+  border-radius: 20px;
+  height: 30px;
+  display: flex;
+}
+
+// tabs
+.el-tabs__nav-wrap::after {
+  width: 0 !important;
+}
+.el-tabs__header {
+  margin: 0 !important;
+}
+.el-tabs__content {
+  display: none;
+}
+
+// date picker
+.el-date-editor.el-input {
+  width: fit-content !important;
 }
