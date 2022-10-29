@@ -1,5 +1,10 @@
 <template>
-  <el-menu :default-active="activeIndex" mode="horizontal" :ellipsis="false">
+  <el-menu
+    :default-active="activeIndex"
+    mode="horizontal"
+    :ellipsis="false"
+    background-color="#FFFFFF00"
+  >
     <span><img src="../../../public/logo.png" alt="logo" /></span>
     <div class="flex-grow" />
     <el-menu-item index="1">Home</el-menu-item>
@@ -10,7 +15,7 @@
       v-model="language"
       placeholder="Lang"
       size="small"
-      style="width: 80px"
+      style="width: 80px; display: flex; align-items: center; margin: 0 10px"
     >
       <el-option key="Eng" label="Eng" value="Eng" />
     </el-select>
@@ -19,12 +24,12 @@
       v-model="currency"
       placeholder="Curr"
       size="small"
-      style="width: 80px"
+      style="width: 80px; display: flex; align-items: center; margin: 0 10px"
     >
       <el-option key="SAR" label="SAR" value="SAR" />
     </el-select>
 
-    <el-dropdown trigger="click">
+    <el-dropdown trigger="click" style="margin: 0 10px">
       <span
         ><img
           src="../../../public/logo.png"
@@ -61,8 +66,16 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .flex-grow {
   flex-grow: 1;
+}
+.el-menu {
+  border: none !important;
+}
+.el-input__wrapper {
+  border-radius: 20px !important;
+  height: 30px;
+  display: flex;
 }
 </style>
