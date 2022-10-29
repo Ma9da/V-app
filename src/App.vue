@@ -13,7 +13,6 @@ export default {
   computed: {
     currentLayout() {
       const layout = this.$route.meta.layout || "default";
-
       return layout + "Layout";
     },
   },

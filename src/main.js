@@ -8,7 +8,7 @@ import "~/assets/style/index.scss";
 
 // to use ElMessage, import it.
 import "element-plus/theme-chalk/src/message.scss";
-
+import "uno.css";
 const app = createApp(App);
 app.use(store);
 app.use(router);

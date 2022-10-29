@@ -1,4 +1,7 @@
 <template>
+  <div class="display-flex">
+    <button class="m-3"></button>
+  </div>
   <el-menu :default-active="activeIndex" mode="horizontal" :ellipsis="false">
     <span><img src="../../../public/logo.png" alt="logo" /></span>
     <div class="flex-grow" />
