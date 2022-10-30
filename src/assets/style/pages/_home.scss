@@ -35,3 +35,11 @@
 .el-date-editor.el-input {
   width: fit-content !important;
 }
+
+// cards
+.el-card__header {
+  width: 100%;
+  padding: 0;
+  background-color: #ebebef;
+  border-bottom: 2px solid #b0b1c0;
+}
