@@ -1,6 +1,6 @@
 <template>
   <el-row>
-    <el-col :span="6">
+    <el-col :span="24" :sm="12" :md="6">
       <el-row>
         <el-col :span="24" style="font-weight: bold; color: black"
           >CONTACT</el-col
@@ -12,7 +12,7 @@
         <el-col :span="24">happytrip@sales.com</el-col>
       </el-row>
     </el-col>
-    <el-col :span="6">
+    <el-col :span="24" :sm="12" :md="6">
       <el-row>
         <el-col
           :span="24"
@@ -26,7 +26,7 @@
         <el-col :span="24">Discounts</el-col>
       </el-row>
     </el-col>
-    <el-col :span="6">
+    <el-col :span="24" :sm="12" :md="6">
       <el-row>
         <el-col
           :span="24"
@@ -38,7 +38,7 @@
         <el-col :span="24">Instagram</el-col>
       </el-row>
     </el-col>
-    <el-col :span="6">
+    <el-col :span="24" :sm="12" :md="6">
       <el-row>
         <el-col
           :span="24"

@@ -1,6 +1,6 @@
 <template>
   <el-row class="mb-10">
-    <el-col :span="24" :md="6">
+    <el-col :span="24" :md="9">
       <el-col :span="24">
         <h1 class="text-#42436A">Looking For Flights?</h1>
       </el-col>
@@ -54,11 +54,19 @@
         <el-row class="justify-between mb-4">
           <el-col :span="10" class="display-flex flex-col">
             <span class="mb-2">From</span>
-            <el-input v-model="cityFrom" placeholder="London" />
+            <el-input
+              v-model="cityFrom"
+              placeholder="London"
+              class="borderBotOnly"
+            />
           </el-col>
           <el-col :span="10" class="display-flex flex-col">
             <span class="mb-2">To</span>
-            <el-input v-model="cityTo" placeholder="Amastardam" />
+            <el-input
+              v-model="cityTo"
+              placeholder="Amastardam"
+              class="borderBotOnly"
+            />
           </el-col>
         </el-row>
 
@@ -70,6 +78,7 @@
               type="date"
               placeholder="Wed 28 Nov"
               size="default"
+              class="borderBotOnly"
             />
           </el-col>
           <el-col :span="10" class="display-flex flex-col">
@@ -79,6 +88,7 @@
               type="date"
               placeholder="Wed 28 Dec"
               size="default"
+              class="borderBotOnly"
             />
           </el-col>
         </el-row>
@@ -90,6 +100,7 @@
               v-model="adultsNumber"
               placeholder="Adults"
               type="number"
+              class="borderBotOnly"
             />
           </el-col>
           <el-col :span="10" class="display-flex items-end">
@@ -97,6 +108,7 @@
               v-model="childrenNumber"
               placeholder="Children"
               type="number"
+              class="borderBotOnly"
             />
           </el-col>
         </el-row>
@@ -115,7 +127,11 @@
       <el-col :span="24" :class="isFlights ? 'hidden' : 'block'">
         <el-row class="justify-between mb-4">
           <el-col :span="24">
-            <el-input v-model="destination" placeholder="Select Destination" />
+            <el-input
+              v-model="destination"
+              placeholder="Select Destination"
+              class="borderBotOnly"
+            />
           </el-col>
         </el-row>
 
@@ -126,6 +142,7 @@
               type="date"
               placeholder="Wed 28 Nov"
               size="default"
+              class="borderBotOnly"
             />
           </el-col>
           <el-col :span="10">
@@ -134,6 +151,7 @@
               type="date"
               placeholder="Wed 28 Dec"
               size="default"
+              class="borderBotOnly"
             />
           </el-col>
         </el-row>
@@ -143,6 +161,7 @@
             <el-input
               v-model="guestsNumAndRoomNum"
               placeholder="2 Guests, 1 Room"
+              class="borderBotOnly"
             />
           </el-col>
         </el-row>
@@ -158,10 +177,23 @@
         </el-row>
       </el-col>
     </el-col>
+
+    <el-col
+      :span="24"
+      :md="15"
+      class="display-flex justify-end items-end hidden-sm-and-down"
+    >
+      <img src="@/assets/images/landing.png" alt="landing" class="w-96" />
+    </el-col>
   </el-row>
 
-  <el-row class="mb-10 items-center justify-between">
-    <el-col :span="24" :sm="12" :md="6">
+  <el-row class="mb-10 items-center justify-center">
+    <el-col
+      :span="24"
+      :sm="12"
+      :md="6"
+      class="display-flex justify-center items-center py-4"
+    >
       <el-card
         class="rounded-3 display-flex justify-center items-center w-fit"
         :body-style="{
@@ -186,7 +218,13 @@
         </div>
       </el-card>
     </el-col>
-    <el-col :span="24" :sm="12" :md="6">
+
+    <el-col
+      :span="24"
+      :sm="12"
+      :md="6"
+      class="display-flex justify-center items-center py-4"
+    >
       <el-card
         class="rounded-3 display-flex justify-center items-center w-fit"
         :body-style="{
@@ -211,7 +249,13 @@
         </div>
       </el-card>
     </el-col>
-    <el-col :span="24" :sm="12" :md="6">
+
+    <el-col
+      :span="24"
+      :sm="12"
+      :md="6"
+      class="display-flex justify-center items-center py-4"
+    >
       <el-card
         class="rounded-3 display-flex justify-center items-center w-fit"
         :body-style="{
@@ -236,7 +280,13 @@
         </div>
       </el-card>
     </el-col>
-    <el-col :span="24" :sm="12" :md="6">
+
+    <el-col
+      :span="24"
+      :sm="12"
+      :md="6"
+      class="display-flex justify-center items-center py-4"
+    >
       <el-card
         class="rounded-3 display-flex justify-center items-center w-fit"
         :body-style="{
@@ -264,13 +314,21 @@
   </el-row>
 
   <el-row class="mb-10">
-    <el-col :span="24" :md="13" class="display-flex justify-end mb-20">
+    <el-col
+      :span="24"
+      :md="13"
+      class="display-flex justify-center items-end flex-col pr-15"
+    >
       <h2 class="text-#FF1E74 w-55 text-center">
         Login to see your free nights
       </h2>
     </el-col>
 
-    <el-col :span="24" :md="12">
+    <el-col
+      :span="24"
+      :md="12"
+      class="px-4 py-2 display-flex justify- items-center"
+    >
       <el-card
         class="display-flex flex-col justify-center items-center rounded-3 w-fit"
         :body-style="{
@@ -286,7 +344,7 @@
             <el-row class="mb-4" :gutter="50">
               <el-col :span="4">
                 <el-avatar
-                  :size="50"
+                  :size="40"
                   shape="square"
                   style="background-color: #5808d8"
                   class="font-bold"
@@ -297,7 +355,7 @@
 
               <el-col :span="4">
                 <el-avatar
-                  :size="50"
+                  :size="40"
                   shape="square"
                   style="background-color: white"
                   class="font-bold text-#B0B1C0 border-2 border-#B0B1C0 border-dotted"
@@ -305,9 +363,10 @@
                   logo
                 </el-avatar>
               </el-col>
+
               <el-col :span="4">
                 <el-avatar
-                  :size="50"
+                  :size="40"
                   shape="square"
                   style="background-color: white"
                   class="font-bold text-#B0B1C0 border-2 border-#B0B1C0 border-dotted"
@@ -315,9 +374,10 @@
                   logo
                 </el-avatar>
               </el-col>
+
               <el-col :span="4">
                 <el-avatar
-                  :size="50"
+                  :size="40"
                   shape="square"
                   style="background-color: white"
                   class="font-bold text-#B0B1C0 border-2 border-#B0B1C0 border-dotted"
@@ -325,9 +385,10 @@
                   logo
                 </el-avatar>
               </el-col>
+
               <el-col :span="4">
                 <el-avatar
-                  :size="50"
+                  :size="40"
                   shape="square"
                   style="background-color: white"
                   class="font-bold text-#B0B1C0 border-2 border-#B0B1C0 border-dotted"
@@ -340,7 +401,7 @@
             <el-row :gutter="50">
               <el-col :span="4">
                 <el-avatar
-                  :size="50"
+                  :size="40"
                   shape="square"
                   style="background-color: white"
                   class="font-bold text-#B0B1C0 border-2 border-#B0B1C0 border-dotted"
@@ -351,7 +412,7 @@
 
               <el-col :span="4">
                 <el-avatar
-                  :size="50"
+                  :size="40"
                   shape="square"
                   style="background-color: white"
                   class="font-bold text-#B0B1C0 border-2 border-#B0B1C0 border-dotted"
@@ -361,7 +422,7 @@
               </el-col>
               <el-col :span="4">
                 <el-avatar
-                  :size="50"
+                  :size="40"
                   shape="square"
                   style="background-color: white"
                   class="font-bold text-#B0B1C0 border-2 border-#B0B1C0 border-dotted"
@@ -371,7 +432,7 @@
               </el-col>
               <el-col :span="4">
                 <el-avatar
-                  :size="50"
+                  :size="40"
                   shape="square"
                   style="background-color: white"
                   class="font-bold text-#B0B1C0 border-2 border-#B0B1C0 border-dotted"
@@ -381,7 +442,7 @@
               </el-col>
               <el-col :span="4">
                 <el-avatar
-                  :size="50"
+                  :size="40"
                   shape="square"
                   style="background-color: white"
                   class="font-bold text-#B0B1C0 border-2 border-#B0B1C0 border-dotted"
@@ -402,12 +463,12 @@
 
               <el-col :span="12">
                 <div
-                  class="bg-#1CCF3D w-12.5 h-6 rounded-3 text-center text-white text-[10px] font-bold mb-3 display-flex items-center justify-center"
+                  class="bg-#1CCF3D w-11 h-6 rounded-3 text-center text-white text-[10px] font-bold mb-3 display-flex items-center justify-center"
                 >
                   FREE
                 </div>
                 <el-avatar
-                  :size="50"
+                  :size="40"
                   shape="square"
                   style="background-color: #5808d8"
                   class="font-bold"
@@ -425,9 +486,11 @@
           <el-col :span="3" class="text-center"> > </el-col>
         </el-row>
       </el-card>
+
+      <img src="@/assets/images/program.png" class="w-30 pb-80" />
     </el-col>
 
-    <el-col :span="24" :md="12" class="text-#42436A">
+    <el-col :span="24" :md="12" class="text-#42436A px-4 py-2">
       <h1 class="w-60 border-b-3 border-#5808D8 pb-4 text-7 leading-10">
         Happy Trip Loyality Program
       </h1>
@@ -449,6 +512,37 @@
         Explore More</el-button
       >
     </el-col>
+  </el-row>
+
+  <el-row class="mb-10 bg-#5808D8 text-white py-60">
+    <el-col :span="24" :md="12">
+      <h2>Get the Happy Trip App !</h2>
+      <p class="w-80 leading-6">
+        Looking to manage your flight and hotel needs efficiently? BlazeBe does
+        exactly that for you in a few simple taps with artistic user interface
+        and secure payment channels.
+      </p>
+      <el-button class="bg-transparent text-white">Get the app </el-button>
+    </el-col>
+
+    <el-col :span="24" :md="12" class="relative">
+      <img
+        src="@/assets/images/getAppDevice1.png"
+        alt=""
+        class="absolute -top-1/4 right-2/4"
+      />
+      <img
+        src="@/assets/images/getAppDevice2.png"
+        alt=""
+        class="absolute absolute -top-4/4 left-1/4"
+      />
+    </el-col>
+
+    <img
+      src="@/assets/images/getApp.png"
+      alt=""
+      class="w-40 absolute bottom-0 left-0"
+    />
   </el-row>
 </template>
 

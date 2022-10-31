@@ -1,5 +1,5 @@
 <template>
-  <el-container>
+  <el-container class="container mx-auto px-20">
     <el-header>
       <the-header />
     </el-header>
