@@ -7,9 +7,7 @@
   >
     <span><img src="../../../public/logo.png" alt="logo" /></span>
     <div class="flex-grow" />
-    <el-menu-item index="1">
-      <img src="@/assets/icons/home.png" alt="" /> Home</el-menu-item
-    >
+    <el-menu-item index="1"> Home</el-menu-item>
     <el-menu-item index="2">Flights</el-menu-item>
     <el-menu-item index="3">Hotels</el-menu-item>
 

@@ -514,7 +514,9 @@
     </el-col>
   </el-row>
 
-  <el-row class="mb-10 bg-#5808D8 text-white py-60">
+  <el-row
+    class="mb-20 text-white py-60 bg-gradient-to-r from-#8612EA to-#4406D1"
+  >
     <el-col :span="24" :md="12">
       <h2>Get the Happy Trip App !</h2>
       <p class="w-80 leading-6">
@@ -543,6 +545,131 @@
       alt=""
       class="w-40 absolute bottom-0 left-0"
     />
+  </el-row>
+
+  <el-row class="mb-10">
+    <el-col :span="24" :md="12">
+      <el-row>
+        <el-col :span="24" class="mb-10">
+          <el-card
+            class="rounded-l-0 rounded-r-3 border-l-3 border-l-#FDD500 relative overflow-visible w-96"
+            :body-style="{
+              padding: '10px 10px 10px 20px',
+            }"
+          >
+            <div
+              class="rounded-full p-3 border-1 border-#FDD500 w-fit absolute -top-1/4 right-1/10"
+            >
+              <el-avatar
+                :size="40"
+                style="background-color: #fdd500"
+                class="font-bold"
+              >
+                star
+              </el-avatar>
+            </div>
+
+            <h4 class="text-[14px] text-#FDD500">
+              Superior Booking Experience
+            </h4>
+
+            <p class="text-[14px]">
+              Ease of booking, fantastic products and competitive pricing makes
+              the booking experience amazing
+            </p>
+          </el-card>
+        </el-col>
+
+        <el-col :span="24" class="mb-10 ml-30">
+          <el-card
+            class="rounded-l-0 rounded-r-3 border-l-3 border-l-#00D8FD relative overflow-visible w-96"
+            :body-style="{
+              padding: '10px 10px 10px 20px',
+            }"
+          >
+            <div
+              class="rounded-full p-3 border-1 border-#00D8FD w-fit absolute -top-1/4 right-1/10"
+            >
+              <el-avatar
+                :size="40"
+                style="background-color: #00d8fd"
+                class="font-bold"
+              >
+                phone
+              </el-avatar>
+            </div>
+
+            <h4 class="text-[14px] text-#00D8FD">
+              Superior Booking Experience
+            </h4>
+
+            <p class="text-[14px]">
+              Ease of booking, fantastic products and competitive pricing makes
+              the booking experience amazing
+            </p>
+          </el-card>
+        </el-col>
+
+        <el-col :span="24" class="mb-10">
+          <el-card
+            class="rounded-l-0 rounded-r-3 border-l-3 border-l-#FF1E74 relative overflow-visible w-96"
+            :body-style="{
+              padding: '10px 10px 10px 20px',
+            }"
+          >
+            <div
+              class="rounded-full p-3 border-1 border-#FF1E74 w-fit absolute -top-1/4 right-1/10"
+            >
+              <el-avatar
+                :size="40"
+                style="background-color: #ff1e74"
+                class="font-bold"
+              >
+                smile
+              </el-avatar>
+            </div>
+
+            <h4 class="text-[14px] text-#FF1E74">
+              Superior Booking Experience
+            </h4>
+
+            <p class="text-[14px]">
+              Ease of booking, fantastic products and competitive pricing makes
+              the booking experience amazing
+            </p>
+          </el-card>
+        </el-col>
+      </el-row>
+    </el-col>
+
+    <el-col
+      :span="24"
+      :md="12"
+      class="text-#42436A px-4 py-2 flex flex-col justify-center"
+    >
+      <h1 class="text-7 leading-10">Why work with us?</h1>
+
+      <p class="leading-6 mb-15">
+        You are unique, and so is your trip. When you book with Liberty Travel,
+        we match you with an expert best suited to design a vacation just for
+        you.
+      </p>
+    </el-col>
+  </el-row>
+
+  <el-row class="mb-10">
+    <el-col
+      :span="24"
+      :md="12"
+      class="text-#42436A px-4 py-2 flex flex-col justify-center"
+    >
+      <h1 class="text-7 leading-10">Sign up for weekly deals*</h1>
+
+      <p class="leading-6 mb-15">
+        Subscribe to our newsletter so we can spam you with offers and
+        discounts.
+      </p>
+    </el-col>
   </el-row>
 </template>
 
