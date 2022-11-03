@@ -1,21 +1,22 @@
 <template 
 >
-<div>
-
-
+<div class="container px-20">
   <el-menu
     :default-active="activeIndex"
     mode="horizontal"
     :ellipsis="false"
     background-color="#8612EA"
-    class="relative z-0"
+    class="relative z-3 bg-transparent"
   > 
 
     <span><img src="../../../logo.png" alt="logo" /></span>
     <div class="flex-grow" />
-    <el-menu-item index="1" class="text-color">Home</el-menu-item>
+    <div class="flex">
+      <el-menu-item index="1" class="text-color mx-2">Home</el-menu-item>
     <el-menu-item index="2" class="text-color">Flights</el-menu-item>
     <el-menu-item index="3" class="text-color">Hotels</el-menu-item>
+    </div>
+
     
     <el-select
       v-model="language"

@@ -32,6 +32,7 @@
                 >Hotel
               </el-button>
             </el-col>
+
           </el-row>
 
           <el-row :class="isFlights ? 'block' : 'hidden'">
@@ -178,11 +179,24 @@
       </el-col>
     </el-col>
     <el-col :span="24" :md="15" class="relative">
+      
       <!-- style="background-image: url('../../src/assets/images/homePage/houseImage.png')" -->
       <!-- <img src="@/assets/images/homePage/houseImage.png" alt="landing" class="w-180  absolute bottom-60 right--50 bg-no-repeat bg-right-top z-3333" /> -->
     </el-col>
   </el-row>
-
+  <div class="overflow-hidden">
+    <div
+      class="bg-#8612EA w-165 h-165 absolute bottom-0 right--6% top--40% z-2 radius rotate-40 overflow-hidden"
+    >
+      <div
+        class="bg-no-repeat w-full h-full rounded-3xl relative top-21% rotate--40"
+        style="
+          background-image: url('../../src/assets/images/homePage/houseImage.png');
+          opacity: 20%;
+        "
+      ></div>
+    </div>
+  </div>
   <el-row class="mb-10 items-center justify-center">
     <el-col
       :span="24"
@@ -667,20 +681,7 @@
       </p>
     </el-col>
   </el-row>
-  // 
-  <div>
-    <div
-      class="bg-#8612EA w-150 h-150 bottom-50 right--70 z-2 radius rotate-23"
-    >
-      <div
-        class="bg-no-repeat bg-right-top w-170 h-170 rounded-3xl bottom--40 right-0 rotate--23"
-        style="
-          background-image: url('../../src/assets/images/homePage/houseImage.png');
-          opacity: 20%;
-        "
-      ></div>
-    </div>
-  </div>
+  
 </template>
 
 <script>
@@ -711,7 +712,7 @@ export default {
   font-size: 30px !important;
 }
 .radius {
-  border-radius: 90px;
+  border-radius: 120px;
 }
 /* .background {
   position: absolute;
