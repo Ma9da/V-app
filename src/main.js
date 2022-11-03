@@ -22,7 +22,11 @@ import "uno.css";
 // import { dom } from "@fortawesome/fontawesome-svg-core";
 // dom.watch();
 
+
 const app = createApp(App);
+
+
+
 app.use(store);
 app.use(router);
 // app.component("font-awesome-icon", FontAwesomeIcon);

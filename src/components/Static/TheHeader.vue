@@ -1,16 +1,22 @@
-<template>
+<template 
+>
+<div>
+
+
   <el-menu
     :default-active="activeIndex"
     mode="horizontal"
     :ellipsis="false"
-    background-color="#FFFFFF00"
-  >
-    <span><img src="../../../public/logo.png" alt="logo" /></span>
-    <div class="flex-grow" />
-    <el-menu-item index="1"> Home</el-menu-item>
-    <el-menu-item index="2">Flights</el-menu-item>
-    <el-menu-item index="3">Hotels</el-menu-item>
+    background-color="#8612EA"
+    class="relative z-0"
+  > 
 
+    <span><img src="../../../logo.png" alt="logo" /></span>
+    <div class="flex-grow" />
+    <el-menu-item index="1" class="text-color">Home</el-menu-item>
+    <el-menu-item index="2" class="text-color">Flights</el-menu-item>
+    <el-menu-item index="3" class="text-color">Hotels</el-menu-item>
+    
     <el-select
       v-model="language"
       placeholder="Lang"
@@ -39,7 +45,7 @@
           style="width: 50px; height: 50px"
           class="mx-1"
         />
-        <span>Faisal</span>
+        <span class="text-color">Faisal</span>
       </div>
       <template #dropdown>
         <el-card>
@@ -53,6 +59,7 @@
       </template>
     </el-dropdown>
   </el-menu>
+</div>
 </template>
 
 <script>
@@ -65,3 +72,8 @@ export default {
   },
 };
 </script>
+<style scoped>
+.text-color{
+  color: white;
+}
+</style>

@@ -1,9 +1,9 @@
 <template>
-  <el-container class="container mx-auto px-20">
-    <el-header>
+  <el-container class="container">
+    <el-header >
       <the-header />
     </el-header>
-    <el-main>
+    <el-main class="mx-auto px-20">
       <slot></slot>
     </el-main>
     <el-footer>

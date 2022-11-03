@@ -1,1 +1,10 @@
 @import "./pages/home";
+@import url('https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Open+Sans&display=swap');
+html, body {
+  font-family:'Open Sans', sans-serif;
+
+  }
+  
+  #app {
+    font-family:'Open Sans', sans-serif;
+  }

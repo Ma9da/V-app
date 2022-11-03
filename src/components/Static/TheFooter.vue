@@ -6,7 +6,7 @@
           >CONTACT</el-col
         >
         <el-col :span="24">
-          <img src="../../../public/logo.png" alt="logo" />
+          <img src="../../../logo.png" alt="logo" />
         </el-col>
         <el-col :span="24">1234 567 890</el-col>
         <el-col :span="24">happytrip@sales.com</el-col>

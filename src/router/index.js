@@ -10,6 +10,13 @@ const router = createRouter({
 
       component: import("@/views/HomeView.vue"),
     },
+    {
+      path: "/",
+      name: "AboutView",
+      // Async component
+
+      component: import("@/views/AboutView.vue"),
+    },
   ],
 });
 

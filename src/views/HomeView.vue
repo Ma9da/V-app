@@ -1,8 +1,8 @@
-<template>
-  <el-row class="mb-10">
-    <el-col :span="24" :md="9">
+<template class="relative z-0">
+  <el-row class="mb-10 d-flex ">
+    <el-col :span="24" :md="6">
       <el-col :span="24">
-        <h1 class="text-#42436A">Looking For Flights?</h1>
+        <h1 class="text-#42436A font-adj">Looking For Flights?</h1>
       </el-col>
 
       <el-col :span="24" class="mb-3">
@@ -177,14 +177,22 @@
         </el-row>
       </el-col>
     </el-col>
-
-    <el-col
+ <el-col 
       :span="24"
       :md="15"
-      class="display-flex justify-end items-end hidden-sm-and-down"
+      class="relative"  
+ 
     >
-      <img src="@/assets/images/landing.png" alt="landing" class="w-96" />
-    </el-col>
+    <!-- style="background-image: url('../../src/assets/images/homePage/houseImage.png')" -->
+    <!-- <img src="@/assets/images/homePage/houseImage.png" alt="landing" class="w-180  absolute bottom-60 right--50 bg-no-repeat bg-right-top z-3333" /> -->
+    <div class=" bg-#8612EA w-150 h-150 absolute bottom-50 right--70 z-2 radius rotate-23">
+      <div 
+      class="bg-no-repeat bg-right-top w-170 h-170 rounded-3xl absolute bottom--40 right-0 rotate--23"
+     style="background-image: url('../../src/assets/images/homePage/houseImage.png');opacity: 20%;">
+    </div>
+    </div>
+   
+  </el-col> 
   </el-row>
 
   <el-row class="mb-10 items-center justify-center">
@@ -697,6 +705,12 @@ export default {
 </script>
 
 <style scoped>
+.font-adj{
+  font-size: 30px !important;
+}
+.radius{
+  border-radius: 90px;
+}
 /* .background {
   position: absolute;
   top: 0;
