@@ -469,7 +469,7 @@
                   style="background-color: #5808d8"
                   class="font-bold"
                 >
-                  logo
+                  logo Test
                 </el-avatar>
               </el-col>
             </el-row>
