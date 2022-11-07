@@ -304,9 +304,7 @@ export default {
 /* .font-adj {
 	font-size: 30px !important;
 } */
-.back-ground {
-	background-image: url(../assets/images/homePage/secondBubble.png);
-}
+
 
 .radius {
 	border-radius: 120px;
