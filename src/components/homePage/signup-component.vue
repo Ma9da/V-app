@@ -1,24 +1,23 @@
 <template>
 	<el-col
-		:span="12"
-		:md="8"
-		:xs="12"
-		:sm="12"
-		class="text-#42436A px-4 sm:px-0 py-2 flex flex-col justify-center"
+		:span="24"
+		:lg="12"
+		:md="12"
+		class="text-#42436A py-2 flex flex-col justify-center content-center"
 	>
-		<h1 class="text-7 leading-10">Sign up for weekly Deals*</h1>
+		<h1 class="px-10 text-7 leading-10">Sign up for weekly Deals*</h1>
 
-		<p class="leading-6 mb-5">
+		<p class="px-10 leading-6 mb-5">
 			Subscribe to our newsletter so we can spam you with offers and
 			discounts.
 		</p>
-		<div class="flex">
+		<div class="flex justify-center content-center">
 			<el-input
 				autosize
 				size="large"
 				v-model="data"
 				placeholder="Enter your Email"
-				class="drop-shadow-2xl lg:md:w-80 sm:w-100 pr-5"
+				class="pl-10 drop-shadow-2xl lg:md:w-80 sm:w-full"
 			/>
 			<div class="btn-shadow">
 				<el-button color="#1CCF3D" class="w-15 py-5 btn-shadow" />
@@ -26,9 +25,10 @@
 		</div>
 	</el-col>
 	<el-col
-		:span="12"
+		:span="24"
+		:lg="12"
 		:md="12"
-		class="back-ground relative text-center sm:hidden md:lg:block"
+		class="back-ground relative text-center hidden lg:md:block"
 	>
 		<div class="w-25 h-25 shadow-style1 z-0" style=""></div>
 		<img
@@ -66,6 +66,6 @@
 }
 .back-ground {
 	background-image: url(../../assets/images/homePage/secondBubble.png);
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 </style>
