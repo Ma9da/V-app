@@ -65,7 +65,8 @@
 							<el-option key="SAR" label="SAR" value="SAR" />
 						</el-select>
 					</el-menu-item>
-					<el-sub-menu index="6">
+					<el-sub-menu index="6"
+					>
 						<template #title>
 							<div class="display-flex items-center">
 								<img
@@ -74,7 +75,7 @@
 									style="width: 50px; height: 50px"
 									class="mx-1"
 								/>
-								<span class="text-color">Faisal</span>
+								<span class="text-color mx-3">Faisal</span>
 							</div>
 						</template>
 						<el-menu-item index="6-1">My Account</el-menu-item>

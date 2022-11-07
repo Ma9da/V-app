@@ -284,7 +284,7 @@
 			class="w-40 absolute bottom-0 left-0 hidden md:lg:sm:block"
 		/>
 	</el-row>
-	<el-row class="mb-10 px-0 lg:md:px-20">
+	<el-row class="justify-between mb-10 px-0 lg:md:px-20">
 		<el-col :span="20" :md="10">
 			<el-row>
 				<el-col :span="24" class="mb-10">

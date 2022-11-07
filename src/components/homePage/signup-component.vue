@@ -20,7 +20,7 @@
 				class="pl-10 drop-shadow-2xl lg:md:w-80 sm:w-full"
 			/>
 			<div class="btn-shadow">
-				<el-button color="#1CCF3D" class="w-15 py-5 btn-shadow" />
+				<el-button color="#1CCF3D" class="w-15 h-full py-5 btn-shadow" />
 			</div>
 		</div>
 	</el-col>
