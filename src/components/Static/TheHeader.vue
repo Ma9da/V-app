@@ -65,15 +65,8 @@
 							<el-option key="SAR" label="SAR" value="SAR" />
 						</el-select>
 					</el-menu-item>
-					<el-menu-item
-						index="6"
-						class="lg:text-white sm:text-gray-800 md:text-gray-800"
-					>
-						<el-dropdown
-							trigger="click"
-							style="margin: 0 10px"
-							cursor="pointer"
-						>
+					<el-sub-menu index="6">
+						<template #title>
 							<div class="display-flex items-center">
 								<img
 									src="@/assets/images/profilePic.png"
@@ -83,26 +76,12 @@
 								/>
 								<span class="text-color">Faisal</span>
 							</div>
-							<template #dropdown>
-								<el-card>
-									<el-dropdown-menu>
-										<el-dropdown-item
-											>My Account</el-dropdown-item
-										>
-										<el-dropdown-item
-											>My Bookings</el-dropdown-item
-										>
-										<el-dropdown-item
-											>Change Password</el-dropdown-item
-										>
-										<el-dropdown-item
-											>Logout</el-dropdown-item
-										>
-									</el-dropdown-menu>
-								</el-card>
-							</template>
-						</el-dropdown>
-					</el-menu-item>
+						</template>
+						<el-menu-item index="6-1">My Account</el-menu-item>
+						<el-menu-item index="6-2">My Bookings</el-menu-item>
+						<el-menu-item index="6-3">Change Password</el-menu-item>
+						<el-menu-item index="6-4">Logout</el-menu-item>
+					</el-sub-menu>
 				</div>
 			</el-menu>
 		</el-header>
