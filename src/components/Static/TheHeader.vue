@@ -65,15 +65,14 @@
 							<el-option key="SAR" label="SAR" value="SAR" />
 						</el-select>
 					</el-menu-item>
-					<el-sub-menu index="6"
-					>
-						<template #title>
-							<div class="display-flex items-center">
+					<el-sub-menu index="6">
+						<template #title class="no-bg">
+							<div class="display-flex items-center no-bg">
 								<img
 									src="@/assets/images/profilePic.png"
 									alt="logo"
 									style="width: 50px; height: 50px"
-									class="mx-1"
+									class="no-bg"
 								/>
 								<span class="text-color mx-3">Faisal</span>
 							</div>
@@ -102,5 +101,8 @@ export default {
 <style scoped>
 .text-color {
 	color: white;
+}
+.no-bg {
+	background: none !important;
 }
 </style>
