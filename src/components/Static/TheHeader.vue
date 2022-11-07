@@ -4,7 +4,7 @@
 		<el-header>
 			<el-menu
 				:default-active="activeIndex"
-				class="el-menu-demo relative z-3 bg-transparent jusify-items-between content-center"
+				class="el-menu-demo relative z-3 bg-transparent justify-between content-center"
 				mode="horizontal"
 				background-color="#8612EA"
 				text-color="#fff"
