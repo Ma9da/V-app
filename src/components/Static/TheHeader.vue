@@ -1,7 +1,7 @@
 <template 
 >
 <!-- <div class="container px-20"> -->
-  <el-container fluid class="mx-auto px-10 py-4">
+  <el-container fluid class="mx-auto py-4  lg:px-10 md:px-5 sm:px-2">
     <el-header>
   <el-menu
     :default-active="activeIndex"
@@ -14,9 +14,9 @@
     <span><img src="../../../logo.png" alt="logo" /></span>
     <div class="flex-grow" />
     <div class="flex">
-      <el-menu-item index="1" class="text-color mx-2">Home</el-menu-item>
-    <el-menu-item index="2" class="text-color">Flights</el-menu-item>
-    <el-menu-item index="3" class="text-color">Hotels</el-menu-item>
+      <el-menu-item index="1" class="lg:text-white sm:text-gray-800 md:text-gray-800 mx-2">Home</el-menu-item>
+    <el-menu-item index="2" class="lg:text-white sm:text-gray-800 md:text-gray-800">Flights</el-menu-item>
+    <el-menu-item index="3" class="lg:text-white sm:text-gray-800 md:text-gray-800">Hotels</el-menu-item>
     </div>
 
     
