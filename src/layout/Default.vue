@@ -1,9 +1,9 @@
 <template>
-      <the-header />
-    <el-main class="mx-auto px-20">
+      <the-header  />
+    <el-main class="mx-auto px-0 mx-0">
       <slot></slot>
     </el-main>
-    <el-footer>
+    <el-footer class="h-fit px-20 mx-auto">
       <the-footer />
     </el-footer>
 </template>

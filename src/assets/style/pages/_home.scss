@@ -63,6 +63,18 @@
 
 // headers
 h1 {
-  font-size: 39px !important;
+  font-size: 30px !important;
+  font-weight: 700;
   margin: 5px 0;
+}
+h4{
+  font-weight: 800;
+}
+.heder-line{
+  width: 25%;
+  color: #5808d8;
+  height: 5px;
+  border: none;
+  background-color: #5808d8;
+  margin-left: 0;
 }

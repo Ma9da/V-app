@@ -1,6 +1,8 @@
 <template 
 >
-<div class="container px-20">
+<!-- <div class="container px-20"> -->
+  <el-container fluid class="mx-auto px-10 py-4">
+    <el-header>
   <el-menu
     :default-active="activeIndex"
     mode="horizontal"
@@ -60,7 +62,8 @@
       </template>
     </el-dropdown>
   </el-menu>
-</div>
+</el-header>
+</el-container>
 </template>
 
 <script>
