@@ -6,9 +6,7 @@
 		<form-component></form-component>
 	</el-row>
 	<div class="overflow-hidden block sm:hidden lg:block">
-
 		<div class="-z-1 bg-#8612EA w-165 h-165 absolute bottom-0 right--6% top--40% radius rotate-40 overflow-hidden">
-
 			<div class="bg-no-repeat w-full h-full rounded-3xl relative top-21% rotate--40 overflow-hidden" style="
 					background-image: url('../../src/assets/images/homePage/houseImage.png');
 					opacity: 20%;
@@ -16,93 +14,28 @@
 			<div class="relative bottom-32% left-50% ">
 				<img src="../../src/assets/images/homePage/whitePlane.png" class=" w-60% rotate--40 " />
 			</div>
-
 		</div>
 
 	</div>
 	<el-row class="mb-10 items-center justify-center  px-20">
-		<el-col :span="24" :lg="6" :sm="12" :md="12" class="display-flex  items-center py-4">
-			<el-card class="rounded-3 display-flex justify-center items-center w-fit" :body-style="{
-				padding: '0',
-			}">
-				<img src="@/assets/images/deals1.png" alt="deal" class="basis-full" />
-				<div class="text-[12px] p-3">
-					<span>Winter beach escapes 30% off</span>
-					<div class="text-#5808D8 mt-2 display-flex items-center justify-between">
-						<span>EXPLORE OUR DEALS</span>
-						<el-avatar :size="20" style="background-color: #5808d8" class="font-bold">
-							></el-avatar>
-					</div>
-				</div>
-			</el-card>
-		</el-col>
-
-		<el-col :span="24" :lg="6" :sm="12" :md="12" class="display-flex  items-center py-4">
-			<el-card class="rounded-3 display-flex justify-center items-center w-fit" :body-style="{
-				padding: '0',
-			}">
-				<img src="@/assets/images/deals1.png" alt="deal" class="basis-full" />
-				<div class="text-[12px] p-3">
-					<span>Winter beach escapes 30% off</span>
-					<div class="text-#5808D8 mt-2 display-flex items-center justify-between">
-						<span>EXPLORE OUR DEALS</span>
-						<el-avatar :size="20" style="background-color: #5808d8" class="font-bold">
-							></el-avatar>
-					</div>
-				</div>
-			</el-card>
-		</el-col>
-
-		<el-col :span="24" :lg="6" :sm="12" :md="12" class="display-flex items-center py-4">
-			<el-card class="rounded-3 display-flex justify-center items-center w-fit" :body-style="{
-				padding: '0',
-			}">
-				<img src="@/assets/images/deals1.png" alt="deal" class="basis-full" />
-				<div class="text-[12px] p-3">
-					<span>Winter beach escapes 30% off</span>
-					<div class="text-#5808D8 mt-2 display-flex items-center justify-between">
-						<span>EXPLORE OUR DEALS</span>
-						<el-avatar :size="20" style="background-color: #5808d8" class="font-bold">
-							></el-avatar>
-					</div>
-				</div>
-			</el-card>
-		</el-col>
-
-		<el-col :span="24" :lg="6" :sm="12" :md="12" class="display-flex items-center py-4">
-			<el-card class="rounded-3 display-flex justify-center items-center w-fit" :body-style="{
-				padding: '0',
-			}">
-				<img src="@/assets/images/deals1.png" alt="deal" class="basis-full" />
-				<div class="text-[12px] p-3">
-					<span>Winter beach escapes 30% off</span>
-					<div class="text-#5808D8 mt-2 display-flex items-center justify-between">
-						<span>EXPLORE OUR DEALS</span>
-						<el-avatar :size="20" style="background-color: #5808d8" class="font-bold">
-							></el-avatar>
-					</div>
-				</div>
-			</el-card>
-		</el-col>
+		<card-component></card-component>
 	</el-row>
 
-	<el-row class="mb-10 design-column sm:mb-10 lg:px-20 md:px-20 ">
-		<el-col :span="24" :md="13" 
-			class="display-flex justify-space-around flex-col m-auto items-start h-15 line-height">
-			<h2 class="text-#FF1E74 font-thin w-55 text-center">
+	<el-row class="mb-10 design-column lg:px-20 md:px-20 ">
+		<el-col :span="24" :md="13" :sm="15" :xs="15"
+			class="display-flex justify-space-around flex-col m-auto items-start h-15 sm:mx-auto line-height">
+			<h2 class="text-#FF1E74 font-thin w-55 lg:text-center">
 				Login to see
 				<hr class="horizontal-line" />
 			</h2>
-			<h2 class="text-#FF1E74 font-thin w-55 text-center mt-0 ">
+			<h2 class="text-#FF1E74 font-thin w-55 lg:md:text-center mt-0 ">
 				your free nights
 				<hr class="horizontal-line">
 			</h2>
 		</el-col>
 
 		<el-col :span="24" :md="12" class="px-4 py-2 display-flex justify- items-center">
-			<el-card class="display-flex flex-col justify-center items-center rounded-3 w-fit" :body-style="{
-				padding: '20px',
-			}">
+			<el-card class="display-flex flex-col justify-center items-center rounded-3 w-fit mt-0 sm:mt-10 sm:mx-auto">
 				<template #header>
 					<h4 class="text-#5808D8 text-center">
 						Happy Trip Loyalty Program
@@ -216,13 +149,13 @@
 			<img src="@/assets/images/program.png" class="w-30 pb-80 hidden lg:block" />
 		</el-col>
 
-		<el-col :span="24" :md="12" class="text-#42436A px-4 py-2">
+		<el-col :span="24" :md="12" :sm="24" class="text-#42436A px-4 py-2 sm:mx-15 lg:md:mx-0">
 			<h1 class="w-60 pb-4 text-7 leading-10">
 				Happy Trip Loyality Program
 				<hr class="heder-line">
 			</h1>
 
-			<p class="leading-6 mb-15">
+			<p class="leading-6 mb-15 sm:w-100 lg:md:w-full">
 				As the world's largest student and youth travel company, we've
 				been booking affordable adventures for awesome humans since
 				1979. Experts in Round the World flights, tours, accommodation
@@ -256,13 +189,14 @@
 
 		<el-col :span="12" :md="12" class="relative flex">
 			<div class="flex justify-end relative ">
-				<img src="@/assets/images/getAppDevice1.png" alt="" class="absolute top-20% right-70% sm:hidden md:lg:block" />
-				<img src="@/assets/images/getAppDevice2.png" alt="" class="" />
+				<img src="@/assets/images/getAppDevice1.png" alt=""
+					class="absolute top-20% right-70% sm:hidden md:lg:block" />
+				<img src="@/assets/images/getAppDevice2.png" alt="" class="sm:w-50 lg:md:w-full" />
 			</div>
 
 		</el-col>
 
-		<img src="@/assets/images/getApp.png" alt="" class="w-40 absolute bottom-0 left-0" />
+		<img src="@/assets/images/getApp.png" alt="" class="w-40 absolute bottom-0 left-0 sm:hidden md:lg:block" />
 	</el-row>
 	<el-row class="mb-10 px-20">
 		<el-col :span="24" :md="12">
@@ -350,27 +284,7 @@
 	</el-row>
 
 	<el-row class="mb-10 pl-20">
-		<el-col :span="12" :md="8" class="text-#42436A px-4 sm:px-0  py-2 flex flex-col justify-center">
-			<h1 class="text-7 leading-10">Sign up for weekly Deals*</h1>
-
-			<p class="leading-6 mb-5">
-				Subscribe to our newsletter so we can spam you with offers and
-				discounts.
-			</p>
-			<div class="flex">
-				<el-input autosize size="large" v-model="data" placeholder="Enter your Email"
-					class="drop-shadow-2xl w-80 pr-5" />
-					<div  class="btn-shadow" >
-				<el-button color="#1CCF3D" class="w-15 py-5 btn-shadow" />
-					</div>
-			</div>
-
-		</el-col>
-		<el-col :span="12" :md="12" class="back-ground relative text-center sm:hidden md:lg:block">
-			<div class="w-25 h-25 shadow-style1 z-0" style=" "></div>
-			<img src="../assets/images/homePage/letters.png" relative class="z-3"/>
-			<div class="w-30 h-30 shadow-style2 z-0" style=" "></div>
-		</el-col>
+		<signup-component></signup-component>
 	</el-row>
 </template>
 <script>
@@ -381,19 +295,6 @@ export default {
 	data() {
 		return {
 			url: "../assets/images/homePage/whitePlane.png",
-			// isFlights: true,
-			// // flights
-			// data: "",
-			// activeTab: null,
-			// cityFrom: null,
-			// cityTo: null,
-			// dateCheckin: null,
-			// dateCheckout: null,
-			// adultsNumber: null,
-			// childrenNumber: null,
-			// //hotels
-			// destination: null,
-			// guestsNumAndRoomNum: null,
 		};
 	},
 };
@@ -403,9 +304,10 @@ export default {
 /* .font-adj {
 	font-size: 30px !important;
 } */
-.back-ground{
+.back-ground {
 	background-image: url(../assets/images/homePage/secondBubble.png);
 }
+
 .radius {
 	border-radius: 120px;
 }
@@ -431,39 +333,4 @@ export default {
 .line-height {
 	line-height: 1px;
 }
-
-.shadow-style2{
-	background-color: pink;
-    border-radius: 50%;
-    opacity: 70%;
-    filter: blur(1.5rem);
-	background-color:pink;
-	position: absolute;
-    right: 27%;
-    top: 70%;
-}
-.shadow-style1{
-    border-radius: 50%;
-    opacity: 50%;
-    filter: blur(1.5rem);
-	background-color:#FDD500;
-	position: absolute;
-	left:30%;
-    top: 50%;
-}
-.btn-shadow{
-	box-shadow: 10px 10px 35px 6px rgba(28,207,61,0.30);
--webkit-box-shadow: 10px 10px 35px 6px rgba(28,207,61,0.30);
--moz-box-shadow: 10px 10px 35px 6px rgba(28,207,61,0.30);
-}
-/* .background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-image: url(@/assets/images/background.png);
-  background-size: cover;
-  background-color: #1f2021;
-  min-height: 100vh;
-  z-index: 100;
-} */
 </style>

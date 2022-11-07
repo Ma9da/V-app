@@ -9,10 +9,10 @@
           <img src="../../../logo.png" alt="logo" />
         </el-col>
         <el-col :span="24" class="my-0 bb-0"><p class="text-gray-600 font-extrabold mb-0 mt-5">1234 567 890</p></el-col>
-        <el-col :span="24"><p class="text-gray-600 font-extrabold">happytrip@sales.com</p> </el-col>
+        <el-col :span="24" class="sm:mb-10 lg:md:mb-0"><p class="text-gray-600 font-extrabold">happytrip@sales.com</p> </el-col>
       </el-row>
     </el-col>
-    <el-col :span="24" :sm="12" :md="6">
+    <el-col :span="24" :sm="6" :xs="6" :md="6">
       <el-row>
         <el-col
           :span="24"
@@ -26,7 +26,7 @@
         <el-col :span="24" class="text-gray-500 mb-4">Discounts</el-col>
       </el-row>
     </el-col>
-    <el-col :span="24" :sm="12" :md="6">
+    <el-col :span="24" :sm="6" :xs="6" :md="6">
       <el-row>
         <el-col
           :span="24"
@@ -38,7 +38,7 @@
         <el-col :span="24" class="text-gray-500 mb-4">Instagram</el-col>
       </el-row>
     </el-col>
-    <el-col :span="24" :sm="12" :md="6">
+    <el-col :span="24" :sm="6" :xs="6" :md="6">
       <el-row>
         <el-col
           :span="24"

@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    CardComponent: typeof import('./components/homePage/card-component.vue')['default']
     ElAvatar: typeof import('element-plus/es')['ElAvatar']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCard: typeof import('element-plus/es')['ElCard']
@@ -32,6 +33,7 @@ declare module '@vue/runtime-core' {
     FormComponent: typeof import('./components/homePage/form-component.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SignupComponent: typeof import('./components/homePage/signup-component.vue')['default']
     TheFooter: typeof import('./components/Static/TheFooter.vue')['default']
     TheHeader: typeof import('./components/Static/TheHeader.vue')['default']
   }

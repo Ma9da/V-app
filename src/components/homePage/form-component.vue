@@ -1,5 +1,5 @@
 <template>
-    	<el-col :span="12" :md="6" :sm="12" :lg="6" :xs="24">
+    	<el-col :span="12" :md="6" :sm="18" :lg="6" :xs="18" class="sm:m-auto lg:md:m-0">
 			<el-col :span="24">
 				<h1 class="text-#42436A font-adj">Looking For Flights?</h1>
 			</el-col>
